@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm
+        http://xmlns.jcp.org/xml/ns/persistence/orm_2_2.xsd" version="2.2">	
+        
+	<!-- Client queries -->
+	<named-query name="Client.findByDni">
+		<query>
+			select c
+			from Client c
+			where c.dni = ?1
+		</query>
+	</named-query>
+	
+	<!-- Contract queries -->
+	<named-query name="Contract.findAllInForce">
+		<query>
+			select c 
+			from Contract c 
+			where c.state = uo.ri.cws.domain.Contract.ContractState.IN_FORCE
+		</query>
+	</named-query>
+	
+	<named-query name="Contract.findByMechanicId">
+		<query>
+			select c 
+			from Contract c 
+			where c.mechanic.id = ?1
+		</query>
+	</named-query>
+	
+	<named-query name="Contract.findByProfessionalGroupId">
+		<query>
+			select c
+			from Contract c
+			where c.professionalGroup.id = ?1
+		</query>
+	</named-query>
+	
+	<named-query name="Contract.findByContractTypeId">
+		<query>
+			select c 
+			from Contract c 
+			where c.contractType.id = ?1
+		</query>
+	</named-query>
+	
+	<named-query name="Contract.findAllInForceThisMonth">
+		<query>
+			select c
+			from Contract c
+			where c.state = uo.ri.cws.domain.Contract.ContractState.IN_FORCE
+			or (c.endDate != null 
+				and EXTRACT(MONTH FROM c.endDate) = ?1
+				and EXTRACT(YEAR FROM c.endDate) = ?2)
+		</query>
+	</named-query>
+	
+	<!-- ContractType queries -->
+	<named-query name="ContractType.findByName">
+		<query>
+			select ct
+			from ContractType ct
+			where ct.name = ?1
+		</query>
+	</named-query>
+	
+	<!-- Invoice queries -->
+	<named-query name="Invoice.findByNumber">
+		<query>
+			select f 
+			from Invoice f 
+			where f.number = ?1
+		</query>
+	</named-query>
+	
+	<named-query name="Invoice.getNextInvoiceNumber">
+		<query>
+			select max(f.number) + 1 
+			from Invoice f
+		</query>
+	</named-query>
+
+	<!-- Mechanic queries -->
+	<named-query name="Mechanic.findAllInForce">
+		<query>
+			select m
+			from Mechanic m
+			where m.id in
+				(select c.mechanic.id
+				from Contract c
+				where c.state = uo.ri.cws.domain.Contract.ContractState.IN_FORCE)				
+		</query>
+	</named-query>
+	
+	<named-query name="Mechanic.findInForceInContractType">
+		<query>
+			select m
+			from Mechanic m
+			where m.id in
+				(select c.mechanic.id
+				from Contract c
+				where c.state = uo.ri.cws.domain.Contract.ContractState.IN_FORCE
+				and c.contractType.id = ?1)
+		</query>
+	</named-query>
+	
+	<named-query name="Mechanic.findByDni">
+		<query>
+			select m 
+			from Mechanic m 
+			where m.dni = ?1
+		</query>
+	</named-query>
+
+	<!-- Payroll queries -->
+	<named-query name="Payroll.findByContract">
+		<query>
+			select p
+			from Payroll p
+			where p.contract.id = ?1
+		</query>
+	</named-query>
+	
+	<named-query name="Payroll.findInDates">
+		<query>
+			select p
+			from Payroll p
+			where EXTRACT(MONTH FROM p.date) = ?1
+			and EXTRACT(YEAR FROM p.date) = ?2
+		</query>
+	</named-query>
+	
+	<named-query name="Payroll.findByContractsIdsInDates">
+		<query>
+			select p
+			from Payroll p
+			where p.contract.id in ?1
+			and EXTRACT(MONTH FROM p.date) = ?2
+			and EXTRACT(YEAR FROM p.date) = ?3
+		</query>
+	</named-query>
+
+	<!-- ProfessionalGroup queries -->
+	<named-query name="ProfessionalGroup.findByName">
+		<query>
+			select p
+			from ProfessionalGroup p
+			where p.name = ?1
+		</query>
+	</named-query>
+
+	<!-- Vehicle queries --> 
+	<named-query name="Vehicle.findByPlate">
+		<query>
+			select v 
+			from Vehicle v 
+			where v.plateNumber = ?1
+		</query>
+	</named-query>
+
+	<!-- WorkOrder queries --> 
+	<named-query name="WorkOrder.findByIds">
+		<query>
+			select w
+			from WorkOrder w 
+			where w.id in ?1
+		</query>
+	</named-query>
+	
+	<named-query name="WorkOrder.findNotInvoicedWorkOrdersByClientDni">
+		<query>
+			select w
+			from WorkOrder w
+			where w.vehicle.client.dni = ?1
+			and w.state != uo.ri.cws.domain.WorkOrder.WorkOrderState.INVOICED
+		</query>
+	</named-query>
+
+	<!-- PaymentMean queries -->
+	<named-query name="PaymentMean.findByInvoiceId">
+		<query>
+			select p 
+			from Invoice i 
+				join i.workOrders w 
+				join w.vehicle.client c 
+				join c.paymentMeans p 
+			where i.id = ?1
+		</query>
+	</named-query>	
+		
+<!-- 
+	Use this format if your query has 
+	numeric comparisons as the one in this example
+	
+	<named-query name="findItemsOnSaleByCategoryId">
+		<query>
+			<![CDATA[
+			select i 
+				from Item i join i.categories c
+				where c.id = ?2
+					and i.startDate <= ?1
+					and i.endDate >= ?1 
+			]]>
+		</query>
+	</named-query>
+ -->		
+
+</entity-mappings>

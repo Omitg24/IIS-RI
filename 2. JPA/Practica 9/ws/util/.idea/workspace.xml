@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="178ec48d-8419-439f-bda6-17fdaaaeca5b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../../Ingenieria del Proceso Software/Practicas/Proyecto/ws/IPS2022-PL71" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../Ingenieria del Proceso Software/Practicas/Proyecto/ws/IPS2022-PL71" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/TestVehiclesByDni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/UO281847.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/VehicleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/UO281847.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/1.startup.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/1.startup.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/2.runManagerSwing.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/2.runManagerSwing.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/3.reset.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/4.setLegacy.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/hsqldb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/server.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/test.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/test.script" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/test.script.bck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/database/test.script.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/BusinessException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/BusinessFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/assembler/InvoicingAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/assembler/MechanicAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/assembler/WorkorderAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/ClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/ContractService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/ContractTypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/InvoicingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/MechanicService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/PaymentMeanService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/PayrollService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/ProfessionalGroupService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/VehicleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/VehicleTypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/VoucherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/services interfaces/WorkorderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/util/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/business/util/CommandExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/PersistenceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/PersistenceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/assembler/ClientAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/assembler/InvoiceAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/assembler/MechanicAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/assembler/VehicleAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/assembler/WorkorderAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/gateway interfaces/ClientGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/gateway interfaces/Gateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/gateway interfaces/InvoiceGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/gateway interfaces/MechanicGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/gateway interfaces/VehicleGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/gateway interfaces/WorkOrderGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/persistence/util/Conf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/extra code/ui/util/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/lib/hsqldb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/lib/ojdbc8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/resources/configuration.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/BusinessException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/BusinessFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/client/ClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/client/crud/ClientServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/contract/ContractService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/contract/assembler/ContractAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/contract/crud/ContractServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/contracttype/ContractTypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/contracttype/assembler/ContractTypeAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/contracttype/crud/ContractTypeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/contracttype/crud/commands/AddContractTypeTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/contracttype/crud/commands/DeleteContractTypeTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/contracttype/crud/commands/ListAllContractTypeTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/contracttype/crud/commands/ListContractTypeByNameTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/contracttype/crud/commands/UpdateContractTypeTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/invoice/InvoicingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/invoice/assembler/InvoicingAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/invoice/create/InvoicingServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/invoice/create/commands/CreateInvoiceTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/invoice/create/commands/FindNotInvoicedWorkOrdersTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/mechanic/MechanicService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/mechanic/assembler/MechanicAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/mechanic/crud/MechanicServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/mechanic/crud/commands/AddMechanicTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/mechanic/crud/commands/DeleteMechanicTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/mechanic/crud/commands/FindAllMechanicsTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/mechanic/crud/commands/FindMechanicByDniTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/mechanic/crud/commands/FindMechanicByIdTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/mechanic/crud/commands/FindMechanicsWithContractInForceInContractTypeTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/mechanic/crud/commands/FindMechanicsWithContractInForceTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/mechanic/crud/commands/UpdateMechanicTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/paymentmean/PaymentMeanService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/paymentmean/voucher/VoucherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/payroll/PayrollService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/payroll/assembler/PayrollAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/payroll/crud/PayrollServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/payroll/crud/commands/DeleteLastPayrollTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/payroll/crud/commands/DeletePayrollForMechanicTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/payroll/crud/commands/GeneratePayrollsTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/payroll/crud/commands/ListAllPayrollsSummaryTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/payroll/crud/commands/ListPayrollByMechanicTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/payroll/crud/commands/ListPayrollDetailTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/payroll/crud/commands/ListPayrollsByProfessionalGroupTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/professionalgroup/ProfessionalGroupService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/professionalgroup/assembler/ProfessionalGroupAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/professionalgroup/crud/ProfessionalGroupServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/util/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/util/CommandExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/vehicle/VehicleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/vehicle/assembler/VehicleAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/vehicle/crud/VehicleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/vehicle/crud/commands/FindByClientTS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/vehicletype/VehicleTypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/workorder/WorkorderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/business/workorder/assembler/WorkOrderAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/Gateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/PersistenceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/PersistenceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/client/ClientGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/client/impl/ClientGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/contract/ContractGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/contract/assembler/ContractAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/contract/impl/ContractGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/contracttype/ContractTypeGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/contracttype/assembler/ContractTypeAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/contracttype/impl/ContractTypeGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/intervention/InterventionGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/intervention/assembler/InterventionAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/intervention/impl/InterventionGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/invoice/InvoiceGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/invoice/assembler/InvoiceAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/invoice/impl/InvoiceGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/mechanic/MechanicGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/mechanic/assembler/MechanicAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/mechanic/impl/MechanicGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/payroll/PayrollGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/payroll/assembler/PayrollAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/payroll/impl/PayrollGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/professionalgroup/ProfessionalGroupGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/professionalgroup/assembler/ProfessionalGroupAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/professionalgroup/impl/ProfessionalGroupGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/util/Conf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/vehicle/VehicleGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/vehicle/impl/VehicleGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/workorder/WorkOrderGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/workorder/assembler/WorkorderAssembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/persistence/workorder/impl/WorkOrderGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/cashier/MainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/cashier/action/FindNotInvoicedWorkOrdersAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/cashier/action/SettleInvoiceAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/cashier/action/WorkOrdersBillingAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/foreman/ClientMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/foreman/ClientReceptionMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/foreman/MainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/foreman/VehicleMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/foreman/action/AddWorkOrderAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/foreman/action/FindByClientAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/foreman/action/UpdateWorkOrderAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/ContractTypeMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/ContractsMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/MainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/MechanicMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/PayrollManagementMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/ProfessionalGroupMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/SparePartMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/VehicleTypeMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractManagement/AddContractAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractManagement/DeleteContractAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractManagement/FinishContractAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractManagement/ListAllContractsAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractManagement/ListContractByIdAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractManagement/ListContractsByMechanicDniAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractManagement/UpdateContractAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractTypeManagement/AddContractTypeAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractTypeManagement/DeleteContractTypeAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractTypeManagement/ListAllContractTypeAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractTypeManagement/ListContractTypeByNameAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/contractTypeManagement/UpdateContractTypeAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/mechanicManagement/AddMechanicAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/mechanicManagement/DeleteMechanicAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/mechanicManagement/FindAllMechanicsAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/mechanicManagement/FindMechanicAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/mechanicManagement/FindMechanicsWithContractInForceAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/mechanicManagement/FindMechanicsWithContractInForceInContractTypeAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/mechanicManagement/UpdateMechanicAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/payrollManagement/DeleteLastPayrollAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/payrollManagement/DeletePayrollForMechanicAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/payrollManagement/GeneratePayrollsAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/payrollManagement/GeneratePayrollsByDateAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/payrollManagement/ListAllPayrollsSummariesAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/payrollManagement/ListPayrollByMechanicAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/payrollManagement/ListPayrollDetailAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/payrollManagement/ListPayrollsByProfessionalGroupAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/professionalGroupManagement/AddProfessionalGroupAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/professionalGroupManagement/DeleteProfessionalGroupAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/professionalGroupManagement/ListAllProfessionalGroupAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/professionalGroupManagement/ListProfessionalGroupByNameAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/manager/action/professionalGroupManagement/UpdateProfessionalGroupAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/mechanic/MainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/src/uo/ri/cws/application/ui/util/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/UO281847/test/uo/ri/cws/demo/TestVehiclesByDni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/src/assertion/Argument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/src/assertion/Assert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/src/assertion/StateCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/src/console/Console.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/src/console/DefaultPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/src/exception/NotYetImplementedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/src/jdbc/Jdbc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/src/math/Round.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/src/menu/Action.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/src/menu/BaseMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/Autoria/ws/Util/src/menu/NotYetImplementedAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/CarWorkshop/ES. p3_jdbc.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/CarWorkshop/ES. p4_jdbc.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/CarWorkshop/cucumber_basic_results.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JDBC/CarWorkshop/gettingStarted.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.settings/org.eclipse.jpt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/cws_services_p7_skeleton.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/data/1.startup.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/data/2.runManagerSwing.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/data/3.reset.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/data/4.setLegacy.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/data/hsqldb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/data/server.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/data/test.script.bck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/data/test.script.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/lib/commonj.sdo-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/lib/eclipselink-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/lib/hsqldb-2.2.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/lib/jakarta.persistence-2.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/META-INF/orm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/LoadEntityManagerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/Associations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/Cash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/Charge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/CreditCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/Intervention.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/Invoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/Mechanic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/PaymentMean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/SparePart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/Substitution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/VehicleType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/Voucher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/WorkOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/base/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/src/uo/ri/cws/domain/base/EntityStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/associations/AssignTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/associations/ClassifyTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/associations/FixTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/associations/InterventionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/associations/OwnTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/associations/PayTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/associations/SubstituteTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/associations/ToChargeTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/associations/ToInvoiceTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/domain/CashTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/domain/ChargeTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/domain/CreditCardTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/domain/InterventionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/domain/InvoiceTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/domain/SubstitutionTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/domain/VoucherTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/domain/WorkOrderTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/association/AssignMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/association/ChargeMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/association/ClassifyMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/association/InterveneMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/association/InvoiceMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/association/OrderMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/association/OwnMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/association/SubstituteMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/ChargeMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/ClientMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/CreditCardMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/InterventionMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/InvoiceMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/MechanicMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/SparePartMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/SubstitutionMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/VehicleMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/VehicleTypeMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/VoucherMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/entity/WorkOrderMappingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cws_services_p7_skeleton/test/uo/ri/cws/persistence/util/UnitOfWork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Software y Estandares para la Web/Practicas/3. XML/personas.dtd" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../Software y Estandares para la Web/Practicas/3. XML/personas.dtd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Software y Estandares para la Web/Practicas/3. XML/personas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../Software y Estandares para la Web/Practicas/3. XML/personas.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../.." />
+  </component>
+  <component name="ProjectId" id="2GlbHhEcRkIkN3VbzPtzWtv9H4O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/Ingenieria Informatica/Tercero/Primer_Semestre/Repositorios de Informacion/Practicas/JPA/Practica 7/ws/util"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="178ec48d-8419-439f-bda6-17fdaaaeca5b" name="Changes" comment="" />
+      <created>1666966039328</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666966039328</updated>
+      <workItem from="1666966040503" duration="22000" />
+      <workItem from="1667055840363" duration="34000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

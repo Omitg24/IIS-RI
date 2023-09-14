@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="lib" path="lib/commonj.sdo-2.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/eclipselink-2.7.7.jar"/>
+	<classpathentry kind="lib" path="lib/hsqldb-2.2.9.jar"/>
+	<classpathentry kind="lib" path="lib/jakarta.persistence-2.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/javax.persistence-api-2.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-14">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/util"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

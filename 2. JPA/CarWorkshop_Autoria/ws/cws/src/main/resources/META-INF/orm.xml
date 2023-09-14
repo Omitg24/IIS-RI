@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm
+        http://xmlns.jcp.org/xml/ns/persistence/orm_2_2.xsd" version="2.2">	 
+		
+	<package>uo.ri.cws.domain</package>
+	<access>FIELD</access>
+		
+	<!-- Client queries -->
+	<named-query name="Client.findByDni">
+		<query>
+			select c
+			from Client c
+			where c.dni = ?1
+		</query>
+	</named-query>
+	
+	<!-- Contract queries -->
+	<named-query name="Contract.findAllInForce">
+		<query>
+			select c 
+			from Contract c 
+			where c.state = 'IN_FORCE'
+		</query>
+	</named-query>
+	
+	<named-query name="Contract.findByMechanicId">
+		<query>
+			select c 
+			from Contract c 
+			where c.mechanic.id = ?1
+		</query>
+	</named-query>
+	
+	<named-query name="Contract.findByProfessionalGroupId">
+		<query>
+			select c
+			from Contract c
+			where c.professionalGroup.id = ?1
+		</query>
+	</named-query>
+	
+	<named-query name="Contract.findByContractTypeId">
+		<query>
+			select c 
+			from Contract c 
+			where c.contractType.id = ?1
+		</query>
+	</named-query>
+	
+	<named-query name="Contract.findAllInForceThisMonth">
+		<query>
+			select c
+			from Contract c
+			where c.state = 'IN_FORCE'
+			or (c.endDate != null 
+				and EXTRACT(MONTH FROM c.endDate) = ?1
+				and EXTRACT(YEAR FROM c.endDate) = ?2)
+		</query>
+	</named-query>
+	
+	<!-- ContractType queries -->
+	<named-query name="ContractType.findByName">
+		<query>
+			select ct
+			from ContractType ct
+			where ct.name = ?1
+		</query>
+	</named-query>
+	
+	<!-- Intervention queries -->
+	<named-query name="Intervention.findExpensiveRepairs">
+		<query>
+			select i
+			from Intervention i
+			where i.workOrder.id in 
+				(select w
+				from WorkOrder w
+				where w.amount>=2000)
+		</query>
+	</named-query>	
+	
+	<!-- Invoice queries -->
+	<named-query name="Invoice.findByNumber">
+		<query>
+			select f 
+			from Invoice f 
+			where f.number = ?1
+		</query>
+	</named-query>
+	
+	<named-query name="Invoice.getNextInvoiceNumber">
+		<query>
+			select max(f.number) + 1 
+			from Invoice f
+		</query>
+	</named-query>
+
+	<!-- Mechanic queries -->
+	<named-query name="Mechanic.findAllInForce">
+		<query>
+			select m
+			from Mechanic m
+			where m.id in
+				(select c.mechanic.id
+				from Contract c
+				where c.state = 'IN_FORCE')				
+		</query>
+	</named-query>
+	
+	<named-query name="Mechanic.findInForceInContractType">
+		<query>
+			select m
+			from Mechanic m
+			where m.id in
+				(select c.mechanic.id
+				from Contract c
+				where c.state = 'IN_FORCE'
+				and c.contractType.id = ?1)
+		</query>
+	</named-query>
+	
+	<named-query name="Mechanic.findByDni">
+		<query>
+			select m 
+			from Mechanic m 
+			where m.dni = ?1
+		</query>
+	</named-query>
+	
+	<named-query name="Mechanic.findMechanicWithExpensiveRepairs">
+		<query>
+			select m
+			from Mechanic m
+			where id in (
+				select i.mechanic.id
+				from Intervention i
+				where i.workOrder.id in 
+					(select w.id
+					from WorkOrder w
+					where w.amount>=2000))
+		</query>
+	</named-query>	
+
+	<!-- Payroll queries -->
+	<named-query name="Payroll.findByContract">
+		<query>
+			select p
+			from Payroll p
+			where p.contract.id = ?1
+		</query>
+	</named-query>
+	
+	<named-query name="Payroll.findInDates">
+		<query>
+			select p
+			from Payroll p
+			where EXTRACT(MONTH FROM p.date) = ?1
+			and EXTRACT(YEAR FROM p.date) = ?2
+		</query>
+	</named-query>
+	
+	<named-query name="Payroll.findByContractsIdsInDates">
+		<query>
+			select p
+			from Payroll p
+			where p.contract.id in ?1
+			and EXTRACT(MONTH FROM p.date) = ?2
+			and EXTRACT(YEAR FROM p.date) = ?3
+		</query>
+	</named-query>
+
+	<!-- ProfessionalGroup queries -->
+	<named-query name="ProfessionalGroup.findByName">
+		<query>
+			select p
+			from ProfessionalGroup p
+			where p.name = ?1
+		</query>
+	</named-query>
+
+	<!-- Vehicle queries --> 
+	<named-query name="Vehicle.findByPlate">
+		<query>
+			select v 
+			from Vehicle v 
+			where v.plateNumber = ?1
+		</query>
+	</named-query>
+
+	<!-- WorkOrder queries --> 
+	<named-query name="WorkOrder.findByIds">
+		<query>
+			select w
+			from WorkOrder w 
+			where w.id in ?1
+		</query>
+	</named-query>
+	
+	<named-query name="WorkOrder.findNotInvoicedWorkOrdersByClientDni">
+		<query>
+			select w
+			from WorkOrder w
+			where w.vehicle.client.dni = ?1
+			and w.state != 'INVOICED'
+		</query>
+	</named-query>	
+
+	<!-- PaymentMean queries -->
+	<named-query name="PaymentMean.findPaymentMeansByClientId">
+		<query>
+			select pm 
+			from PaymentMean pm
+			where pm.client.id = ?1
+		</query>
+	</named-query>	
+	
+	<named-query name="PaymentMean.findByInvoiceId">
+		<query>
+			select p 
+			from Invoice i 
+				join i.workOrders w 
+				join w.vehicle.client c 
+				join c.paymentMeans p 
+			where i.id = ?1
+		</query>
+	</named-query>	
+		
+<!-- 
+	Use this format if your query has 
+	numeric comparisons as the one in this example
+	
+	<named-query name="findItemsOnSaleByCategoryId">
+		<query>
+			<![CDATA[
+			select i 
+				from Item i join i.categories c
+				where c.id = ?2
+					and i.startDate <= ?1
+					and i.endDate >= ?1 
+			]]>
+		</query>
+	</named-query>
+ -->		
+
+	<!-- ANOTACIONES @JPA -->
+
+	<mapped-superclass class="uo.ri.cws.domain.base.BaseEntity">
+		<attributes>
+			<id name="id"/>
+			<version name="version"/>
+		</attributes>
+	</mapped-superclass>
+	
+	<entity name="WorkOrder" class="uo.ri.cws.domain.WorkOrder">
+  		<table name="TWorkOrders">
+  		<unique-constraint>
+            <column-name>DATE</column-name>
+            <column-name>VEHICLE_ID</column-name>
+        </unique-constraint>
+        </table>
+  		<attributes>
+			<basic name="date" optional="false">
+  				<column unique="true"/>
+  			</basic>
+  			<basic name="description" optional="false"></basic>  			
+  			<basic name="amount" optional="false"></basic>
+  			<basic name="state">
+				<column name="status"/>
+  				<enumerated>STRING</enumerated>
+  			</basic>
+  			<many-to-one name="vehicle" target-entity="uo.ri.cws.domain.Vehicle" optional="false" fetch="LAZY"/>
+			<many-to-one name="mechanic" target-entity="uo.ri.cws.domain.Mechanic" fetch="LAZY"/>
+  			<many-to-one name="invoice" target-entity="uo.ri.cws.domain.Invoice" fetch="LAZY"/>  			
+  			<one-to-many name="interventions" target-entity="uo.ri.cws.domain.Intervention" mapped-by="workOrder"/>
+  		</attributes>
+  	</entity>
+  	
+  	<entity name="PaymentMean" class="uo.ri.cws.domain.PaymentMean">
+  		<table name="TPaymentMeans"></table>
+  		<inheritance strategy="JOINED"></inheritance>
+  		<attributes>
+  			<basic name="accumulated" optional="false"></basic>
+			<many-to-one name="client" target-entity="uo.ri.cws.domain.Client" fetch="LAZY"/>
+  			<one-to-many name="charges" target-entity="uo.ri.cws.domain.Charge" mapped-by="paymentMean"/>
+		</attributes>
+  	</entity>
+  	
+  	<entity name="Voucher" class="uo.ri.cws.domain.Voucher">
+  		<table name="TVouchers">
+        </table>
+  		<attributes>
+  			<basic name="code" optional="false">
+				<column unique="true"/>
+			</basic>
+  			<basic name="available"></basic>
+  			<basic name="description"></basic>
+  		</attributes>
+  	</entity>
+  	
+  	<entity name="Charge" class="uo.ri.cws.domain.Charge">
+		<table name="TCharges">
+			<unique-constraint>
+				<column-name>INVOICE_ID</column-name>
+				<column-name>PAYMENTMEAN_ID</column-name>
+			</unique-constraint>
+		</table>
+		<attributes>
+			<basic name="amount" optional="false"></basic>
+			<many-to-one name="invoice" target-entity="uo.ri.cws.domain.Invoice" fetch="LAZY"/>
+			<many-to-one name="paymentMean" target-entity="uo.ri.cws.domain.PaymentMean" fetch="LAZY"/>
+		</attributes>
+	</entity>
+	
+	<entity name="Client" class="uo.ri.cws.domain.Client">
+		<table name="TClients"></table>
+		<attributes>
+			<basic name="dni" optional="false">
+				<column unique="true"/>
+			</basic>
+			<basic name="name" optional="false"></basic>
+			<basic name="surname" optional="false"></basic>
+			<basic name="email"></basic>
+			<basic name="phone"></basic>			
+			<one-to-many name="paymentMeans" target-entity="uo.ri.cws.domain.PaymentMean" mapped-by="client"/>
+			<one-to-many name="vehicles" target-entity="uo.ri.cws.domain.Vehicle" mapped-by="client"/>
+			<embedded name="address"></embedded>
+		</attributes>
+	</entity>
+	
+	<entity name="Contract" class="uo.ri.cws.domain.Contract">
+  		<table name="TContracts">
+			<unique-constraint>
+				<column-name>STARTDATE</column-name>
+				<column-name>MECHANIC_ID</column-name>            
+			</unique-constraint>
+        </table>
+  		<attributes>
+  			<basic name="startDate" optional="false">
+  				<column unique="true"/>
+  			</basic>
+  			<basic name="endDate"></basic>
+  			<basic name="annualBaseWage"></basic>
+  			<basic name="settlement"></basic>
+  			<basic name="state">
+  				<enumerated>STRING</enumerated>
+  			</basic>
+			<many-to-one name="mechanic" target-entity="uo.ri.cws.domain.Mechanic" optional = "false" fetch="LAZY"/>
+			<many-to-one name="firedMechanic" target-entity="uo.ri.cws.domain.Mechanic" optional = "false" fetch="LAZY"/>
+  			<many-to-one name="contractType" target-entity="uo.ri.cws.domain.ContractType" optional = "false" fetch="LAZY"/>
+			<many-to-one name="professionalGroup" target-entity="uo.ri.cws.domain.ProfessionalGroup" optional = "false" fetch="LAZY"/>
+  			<one-to-many name="payrolls" target-entity="uo.ri.cws.domain.Payroll" mapped-by="contract"/>
+  		</attributes>
+  	</entity>
+	
+	<entity name="Invoice" class="uo.ri.cws.domain.Invoice">
+  		<table name="TInvoices"></table>
+  		<attributes>
+  			<basic name="number" optional="false">
+				<column unique="true"/>
+			</basic>
+  			<basic name="date" optional="false"></basic>
+  			<basic name="amount" optional="false"></basic>
+			<basic name="vat" optional="false"></basic>
+			<basic name="state">
+				<column name = "status"/>
+  				<enumerated>STRING</enumerated>
+  			</basic>  			
+			<one-to-many name="workOrders" target-entity="uo.ri.cws.domain.WorkOrder" mapped-by="invoice"/>
+			<one-to-many name="charges" target-entity="uo.ri.cws.domain.Charge" mapped-by="invoice"/>
+  		</attributes>
+  	</entity>
+  	
+  	<entity name="ContractType" class="uo.ri.cws.domain.ContractType">
+  		<table name="TContractTypes"></table>
+  		<attributes>
+  			<basic name="name" optional="false">
+				<column unique="true"/>
+			</basic>
+  			<basic name="compensationDays"></basic>
+  			<one-to-many name="contracts" target-entity="uo.ri.cws.domain.Contract" mapped-by="contractType"/>
+		</attributes>
+  	</entity>
+	
+	<entity name="Mechanic" class="uo.ri.cws.domain.Mechanic">
+  		<table name="TMechanics"></table>
+  		<attributes>
+  			<basic name="dni" optional="false">
+				<column unique="true"/>
+			</basic>
+  			<basic name="name" optional="false"></basic>
+  			<basic name="surname" optional="false"></basic>			
+  			<one-to-many name="assigned" target-entity="uo.ri.cws.domain.WorkOrder" mapped-by="mechanic"/>
+			<one-to-many name="interventions" target-entity="uo.ri.cws.domain.Intervention" mapped-by="mechanic"/>
+			<one-to-many name="terminatedContracts" target-entity="uo.ri.cws.domain.Contract" mapped-by="firedMechanic"/>
+			<one-to-one name="contractInForce" target-entity="uo.ri.cws.domain.Contract" mapped-by="mechanic"/>					
+		</attributes>
+  	</entity>
+	
+	<entity name="Intervention" class="uo.ri.cws.domain.Intervention">
+  		<table name="TInterventions">
+			<unique-constraint>
+				<column-name>WORKORDER_ID</column-name>
+				<column-name>MECHANIC_ID</column-name>
+				<column-name>DATE</column-name>				
+			</unique-constraint>
+        </table>
+  		<attributes>
+			<basic name="date" optional="false">
+				<column unique="true"/>
+			</basic>
+  			<basic name="minutes" optional="false"></basic>
+  			<many-to-one name="workOrder" target-entity="uo.ri.cws.domain.WorkOrder" fetch="LAZY"/>
+			<many-to-one name="mechanic" target-entity="uo.ri.cws.domain.Mechanic" fetch="LAZY"/>
+			<one-to-many name="substitutions" target-entity="uo.ri.cws.domain.Substitution" mapped-by="intervention"/>
+		</attributes>
+  	</entity>
+	
+	<entity name="ProfessionalGroup" class="uo.ri.cws.domain.ProfessionalGroup">
+		<table name="TProfessionalGroups"></table>
+		<attributes>
+			<basic name="name" optional="false">
+				<column unique="true"/>
+			</basic>
+			<basic name="productivityBonus">
+				<column name="productivityBonusPercentage"/>
+			</basic>
+			<basic name="trienniumPayment"></basic>
+			<one-to-many name="contracts" target-entity="uo.ri.cws.domain.Contract" mapped-by="professionalGroup"/>
+		</attributes>
+	</entity>
+	
+	<entity name="Cash" class="uo.ri.cws.domain.Cash">
+		<table name="TCashes"></table>
+	</entity>
+	  	
+  	<entity name="Payroll" class="uo.ri.cws.domain.Payroll">
+  		<table name="TPayrolls">
+			<unique-constraint>
+				<column-name>DATE</column-name>
+				<column-name>CONTRACT_ID</column-name>
+			</unique-constraint>
+        </table>
+  		<attributes>
+  			<basic name="date" optional="false">
+				<column unique="true"/>
+  			</basic>
+  			<basic name="monthlyWage"></basic>
+			<basic name="bonus"></basic>
+			<basic name="productivityBonus"></basic>
+			<basic name="trienniumPayment"></basic>
+			<basic name="incomeTax"></basic>
+			<basic name="nic"></basic>
+  			<many-to-one name="contract" target-entity="uo.ri.cws.domain.Contract" optional="false" fetch="LAZY"/>
+		</attributes>
+  	</entity>  	
+  	
+  	<entity name="SparePart" class="uo.ri.cws.domain.SparePart">
+  		<table name="TSpareParts"></table>
+  		<attributes>
+  			<basic name="code" optional="false">
+				<column unique="true" />
+			</basic>
+  			<basic name="description" optional="false"></basic>
+			<basic name="price" optional="false"></basic>
+			<one-to-many name="substitutions" target-entity="uo.ri.cws.domain.Substitution" mapped-by="sparePart"/>
+		</attributes>
+  	</entity>
+  	
+  	<entity name="Substitution" class="uo.ri.cws.domain.Substitution">
+  		<table name="TSubstitutions">
+			<unique-constraint>
+				<column-name>SPAREPART_ID</column-name>
+				<column-name>INTERVENTION_ID</column-name>
+			</unique-constraint>
+        </table>
+  		<attributes>
+			<basic name="quantity" optional="false"></basic>
+  			<many-to-one name="sparePart" target-entity="uo.ri.cws.domain.SparePart" fetch="LAZY"/>
+			<many-to-one name="intervention" target-entity="uo.ri.cws.domain.Intervention" fetch="LAZY"/>			
+		</attributes>
+  	</entity>
+  	
+  	<entity name="CreditCard" class="uo.ri.cws.domain.CreditCard">
+  		<table name="TCreditCards"></table>
+        <attributes>
+        	<basic name="number" optional="false">
+				<column unique="true"/>
+			</basic>
+  			<basic name="type" optional="false"></basic>
+  			<basic name="validThru" optional="false"></basic>
+		</attributes>
+  	</entity>
+  	
+	<entity name="Vehicle" class="uo.ri.cws.domain.Vehicle">
+  		<table name="TVehicles"> </table>
+        <attributes>
+  			<basic name="plateNumber" optional="false">
+				<column unique="true"/>
+			</basic>
+  			<basic name="make" optional="false">
+				<column name="BRAND"/>
+			</basic>
+  			<basic name="model" optional="false"></basic> 			
+			<many-to-one name="client" target-entity="uo.ri.cws.domain.Client" optional="false" fetch="LAZY"/>
+			<many-to-one name="vehicleType" target-entity="uo.ri.cws.domain.VehicleType" optional="false" fetch="LAZY"/>
+			<one-to-many name="workOrders" target-entity="uo.ri.cws.domain.WorkOrder" mapped-by="vehicle"/>
+		</attributes>
+  	</entity>
+	
+	<entity name="VehicleType" class="uo.ri.cws.domain.VehicleType">
+  		<table name="TVehicleTypes"></table>
+        <attributes>
+  			<basic name="name" optional="false">
+				<column unique="true"/>
+			</basic>
+  			<basic name="pricePerHour" optional="false"></basic>
+  			<one-to-many name="vehicles" target-entity="uo.ri.cws.domain.Vehicle" mapped-by="vehicleType"/>
+		</attributes>
+  	</entity>	
+  	
+  	<embeddable class="uo.ri.cws.domain.Address">
+		<attributes>
+			<basic name="street"></basic>
+			<basic name="city"></basic>
+			<basic name="zipCode"></basic>
+		</attributes>
+	</embeddable>
+		
+</entity-mappings>

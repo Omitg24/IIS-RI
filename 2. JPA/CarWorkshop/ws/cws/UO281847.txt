@@ -1,0 +1,59 @@
+--------------------------------------------------------------------------------
+REPOSITORIOS DE INFORMACI�N - CARWORKSHOP - ENTREGA JPA
+--------------------------------------------------------------------------------
+DATOS PERSONALES----------------------------------------------------------------
+
+	Nombre: Omar Teixeira González
+	DNI: 32892095W
+
+CASOS DE USO--------------------------------------------------------------------
+
+	281847%3=0 -> Caso de uso 0:
+		Gestión de nóminas:
+			- Generar nóminas
+			- Eliminar nóminas
+			- Mostrar nómina
+		
+		Gestión de tipos de contrato:
+			- Añadir tipos de contrato
+			- Actualizar tipos de contrato
+			- Eliminar tipos de contrato
+			- Mostrar tipos de contrato
+			
+		Gestión de mecánicos ampliado:
+			- Verificación de borrado
+			- Mostrar mecánicos con contrato en vigor
+
+COMENTARIOS---------------------------------------------------------------------
+	
+	Se ha dejado un comentario en el método computeAmount de la clase Invoice 
+	del paquete: uo.ri.cws.domain, acerca de una incongruencia sobre el tipo
+	de redondeo pedido (redondeo o truncamiento), lo que produce que 2 tests 
+	fallen (cuando no deberían) si se elige el truncamiento, concretamente:
+		- testAmountForTwoWorkOrders()
+		- testInvoiceAmountAddingTwoWorkOrders()
+	Como se explica en el comentario, se ha elegido el truncamiento para que los
+	tests del proyecto de tests extendidos (acceptance_tests.cws_extension1) 
+	pasen correctamente.		
+	
+	Se ha modificado el service de Invoice para poder realizar correctamente
+	el SettleInvoice, debido a que el Map de cargos que recibe, era 
+	<Long, Double> en lugar de <String, Double>, por lo que se ha modificado a 
+	String la clave del Map.
+	
+	A día de entrega, pasan todos los test (básicos y extendidos), salvo los 
+	relacionados con la busqueda de mecánicos por ProfessionalGroup (y aquellos 
+	mencionados en el comentario anterior por la incongruencia en cuestión), 
+	ya que ese caso de uno no me correspondía, por tanto, esos test fallidos 
+	no forman parte de el trabajo que he realizado.
+	
+	AMPLIACIONES REALIZADAS
+	
+		1. Añadir más tests (significativos y al menos 10)
+			Se encuentran en el paquete de ampliación (amp) en el paquete de 
+			extensión (ext) de los tests, se han realizado un total de 12 tests.			
+		2. Pasar todas las anotaciones @ Jpa al orm.xml
+			Anotaciones traspasadas al final del documento orm.xml			
+		3. Usar otro mapeador (Hibernate)			
+			Se ha usado el mapeador Hibernate 
+--------------------------------------------------------------------------------

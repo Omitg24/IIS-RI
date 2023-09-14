@@ -1,0 +1,6 @@
+--select * from TAverias
+--select * from TFacturas
+--shutdown
+--select * from TMediosPago
+--select c.dni, a.id, a.descripcion, a.fecha, a.status, a.importe from TAverias as a, TVehiculos as v, TClientes as c  where a.vehiculo_id = v.id and v.cliente_id = c.id 
+--select * from TAverias a, TVehiculos v, TClientes c, TMediosPago mp where a.vehiculo_id = v.id and v.cliente_id = c.id and mp.cliente_id = c.id and mp.dtype like '%Bono%'

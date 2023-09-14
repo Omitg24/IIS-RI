@@ -1,0 +1,39 @@
+--------------------------------------------------------------------------------
+REPOSITORIOS DE INFORMACIÓN - CARWORKSHOP - ENTREGA JDBC
+--------------------------------------------------------------------------------
+DATOS PERSONALES----------------------------------------------------------------
+
+	Nombre: Omar Teixeira González
+	DNI: 32892095W
+
+CASOS DE USO--------------------------------------------------------------------
+
+	281847%3=0 -> Caso de uso 0:
+		Gestión de nóminas:
+			- Generar nóminas
+			- Eliminar nóminas
+			- Mostrar nómina
+		
+		Gestión de tipos de contrato:
+			- Añadir tipos de contrato:
+			- Actualizar tipos de contrato:
+			- Eliminar tipos de contrato:
+			- Mostrar tipos de contrato:
+			
+		Gestión de mecánicos ampliado:
+			- Verificación de borrado
+			- Mostrar mécanicos con contrato en vigor
+
+COMENTARIOS---------------------------------------------------------------------
+	
+	Debido a no poder implementar métodos en las interfaces proporcionadas, en
+	alguna clase, como GeneratePayrollsTS, se ha tenido que implementar la 
+	comprobación de fechas dentro de dicha clase, en lugar de la forma correcta,
+	a través de una consulta en el archivo configuration.properties. 
+	
+	A día de entrega, todos los test (básicos y extendidos) pasan, salvo el la 
+	busqueda de mecánicos por ProfessionalGroup, ya que ese caso de uno no me
+	correspondía, por tanto, esos test fallidos no forman parte de el trabajo 
+	que	he realizado.
+	
+--------------------------------------------------------------------------------

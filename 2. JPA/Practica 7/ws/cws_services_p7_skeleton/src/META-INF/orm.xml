@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm
+        http://xmlns.jcp.org/xml/ns/persistence/orm_2_2.xsd" version="2.2">
+
+
+    <!--
+        Use this format if your query has
+        numeric comparisons as the one in this example
+
+        <named-query name="findItemsOnSaleByCategoryId">
+            <query>
+                <![CDATA[
+                select i
+                    from Item i join i.categories c
+                    where c.id = ?2
+                        and i.startDate <= ?1
+                        and i.endDate >= ?1
+                ]]>
+            </query>
+        </named-query>
+     -->
+
+</entity-mappings>
